@@ -49,7 +49,14 @@ body {
 }
 
 .wrapper {
-  height: 250px;
+  height: 100px;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.wrapperDescription {
+  height: 210px;
   /*This part is important for centering*/
   display: grid;
   place-items: center;
@@ -67,9 +74,9 @@ body {
   color: azure;
 }
 .typing-demo-small {
-  width: 820px;
-  animation: typing 2s steps(22);
-  white-space: nowrap;
+  width: 70%;
+  animation: typing2 2s steps(22);
+  white-space: normal;
   overflow: hidden;
   padding-bottom: 5px;
   border-bottom: 3px solid rgb(0, 255, 34);
@@ -81,6 +88,11 @@ body {
 @keyframes typing {
   from {
     width: 0
+  }
+}
+@keyframes typing2 {
+  from {
+    width: 30%
   }
 }
     

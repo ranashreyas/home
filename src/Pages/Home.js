@@ -62,6 +62,8 @@ export default function Landing() {
                 <div class="typing-demo">
                     ShreyasRana()
                 </div>
+            </div>
+            <div class="wrapperDescription">
                 <div class="typing-demo-small">
                     "I am a freshman at <i><b>UC Berkeley</b></i> double majoring in Computer Science and Data Science.<br />
                     I have extensive experience in full stack software development,<br />
@@ -89,7 +91,7 @@ export default function Landing() {
                         expandState?setSkill1State(true):setSkill1State(false)
                     }} onMouseEnter={() => {
                         setSkill1State(true)
-                    }} style={{ width: '18rem', borderWidth:(skill1State?'2px':'2px'), borderColor:(skill1State?'rgb(0, 255, 34)':'rgb(0, 0, 0)') }}>
+                    }} style={{width: '18rem', borderWidth:(skill1State?'2px':'2px'), borderColor:(skill1State?'rgb(0, 255, 34)':'rgb(0, 0, 0)') }}>
                         <Card.Body>
                             <Card.Title style={{ fontFamily: 'monospace', fontSize: '30px' }}>MobiTest</Card.Title>
                             <Card.Text id='skill1' >{skill1State?
